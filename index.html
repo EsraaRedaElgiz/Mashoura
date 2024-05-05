@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./theme/theme.js"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Mashoura</title>
+
+</head>
+
+<body>
+    <!-- nav bar -->
+    <div
+        class="w-full flex flex-row justify-between bg-gradient-to-r from-leftGradiant to-rightGradiant items-center sm:px-[5%] py-3">
+        <div class="flex flex-row items-center">
+            <img src="./images/Vector1.svg"
+                class="w-[1.8rem] h-[1.5rem] md:h-[2rem] md:w-[2.5rem] lg:h-[3.063rem] lg:w-[4.5rem] pr-1" />
+            <h1 class="text-xs md:text-sm  lg:text-logo font-bold  font-Yellix text-fontColor-whiteBaseColor ">Mashoura
+            </h1>
+
+        </div>
+        <div>
+            <ul class="flex flex-row navBar">
+                <li class="px-[.1rem] sm:px-2 md:px-3 text-xs md:text-sm cursor-pointer"><a
+                        class="text-fontColor-aquaBaseColor">Home</a></li>
+                <li
+                    class="dropdown px-[.1rem] sm:px-2 md:px-3 text-xs md:text-sm cursor-pointer  text-fontColor-whiteBaseColor">
+                    <a class="flex flex-row items-center">Features
+                        <img src="./images/arrow-up.svg" width="17" height="16" />
+
+                    </a>
+
+
+                    <ul class="dropdown-content min-w-[200px] md:min-w-[300px] bg-menuGray pt-3 pl-2  ">
+                        <div class="flex flex-row w-full justify-between items-center">
+                            <div class=" w-[40%]">
+                                <li
+                                    class="text-fontColor-darkBlueBaseColor hover:text-fontColor-purbleBaseColor font-bold py-2">
+                                    <a href="#" id="link1">General</a>
+                                </li>
+                                <li
+                                    class="text-fontColor-darkBlueBaseColor hover:text-fontColor-purbleBaseColor font-bold py-2">
+                                    <a href="#" id="link2">Questions Types</a>
+                                </li>
+                                <li
+                                    class="text-fontColor-darkBlueBaseColor hover:text-fontColor-purbleBaseColor font-bold py-2">
+                                    <a href="#" id="link3">Surveys Responses</a>
+                                </li>
+                            </div>
+                            <div class="w-[60%]">
+                                <img src="./images/menuDefault.svg" width="100%" id="menuImage" />
+                            </div>
+                        </div>
+
+                    </ul>
+                </li>
+                <li class="px-[.1rem] sm:px-2 md:px-3 text-xs md:text-sm text-fontColor-whiteBaseColor cursor-pointer">
+                    <a>Pricing</a>
+                </li>
+                <li class="px-[.1rem] sm:px-2 md:px-3 text-xs md:text-sm text-fontColor-whiteBaseColor cursor-pointer">
+                    <a>About
+                        Us</a>
+                </li>
+                <li class="px-[.1rem] sm:px-2 md:px-3 text-xs md:text-sm text-fontColor-whiteBaseColor cursor-pointer">
+                    <a>Contact
+                        Us</a>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="flex flex-row items-center">
+            <div
+                class="flex flex-row items-center px-[.1rem] sm:px-2 md:px-3 text-xs md:text-sm text-fontColor-whiteBaseColor cursor-pointer">
+                <img src="./images/arrow-up.svg" width="17" height="16" />
+                <a>العربيه</a>
+            </div>
+            <button
+                class="btn text-buttonFontSize md:text-sm text-fontColor-darkBlueBaseColor bg-buttonColor-aquaBaseColor  px-buttonSmallX py-buttonSmallY rounded-small font-bold">Get
+                Started</button>
+        </div>
+
+    </div>
+    <!-- end of nav bar-->
+    <!--hero section-->
+    <div class="w-full bg-gradient-to-r from-leftGradiant to-rightGradiant pb-[6rem]">
+        <div class="pt-20  z-1">
+            <img src="./images/Vector2.svg" class="w-[438px] md:w-[538px] h-[646px] lg:w-[858px] lg:h-[646px]" />
+        </div>
+        <div
+            class="z-2 absolute top-[22%] left-[15%] md:left-[22%]  rounded-[100%]  bg-yellow border-2	border-fontColor-aquaBaseColor	flex items-center justify-center overflow-hidden ">
+
+            <img src="./images/image2.svg" width="77" height="77" />
+        </div>
+        <div
+            class="animateFirstDiv z-2 left-[35%] md:left-[65%] absolute right-[15%] md:right-[5%] top-[25%] flex flex-row justify-around items-center bg-cardColor p-4 rounded-[16px]">
+            <div class=" p-[1rem] rounded-[100%] flex items-center justify-center bg-lightGray">
+
+                <img src="./images/Group.svg" width="40" height="40" />
+            </div>
+            <div class="pl-2">
+                <p class="text-xs md:text-sm font-bold">Generate by AI</p>
+                <p class="text-xs md:text-sm">Have full control when creating your survey</p>
+            </div>
+        </div>
+        <div class="z-2 absolute left-[5%] top-[40%] w-[90vw]">
+            <p class="text-baseSmallHero lg:text-baseHero text-fontColor-whiteBaseColor font-bold">When a Survey Tool
+            </p>
+            <div class="flex flex-row  items-center w-full justify-between">
+                <div>
+                    <p class="text-baseSmallHero lg:text-baseHero text-fontColor-whiteBaseColor font-bold">Connecting
+                        <span class="text-fontColor-aquaBaseColor wordChange"></span>
+                        Dots..
+                    </p>
+                    <p class="text-fontColor-whiteBaseColor text-2xl">Collects and analyzes responses from participants
+                        to gather valuable insights</p>
+                </div>
+                <div
+                    class="rounded-[100%]  bg-purpleAvatar border-2	border-cardColor flex items-center justify-center bg-purpleAvatar overflow-hidden">
+
+                    <img src="./images/image26.svg" width="128" height="128" />
+
+                </div>
+
+            </div>
+            <!-- button last part in this section  -->
+            <div class="mt-[4%]">
+                <button
+                    class="btn text-buttonFontSize md:text-sm text-fontColor-darkBlueBaseColor bg-buttonColor-whiteBaseColor  px-buttonLargeX py-buttonLargeY rounded-medium font-bold">Get
+                    Started</button>
+
+            </div>
+            <!-- last avatar and language choose -->
+            <div class="w-full flex flex-row  ">
+                <div class="w-[50%]">
+                </div>
+                <div class="w-[30%]">
+                    <div
+                        class="w-[5rem] h-[5rem] rounded-[2.5rem] border-2	border-cardColor bg-aquaColor  flex items-center justify-center  overflow-hidden">
+
+                        <img src="./images/image71.svg" width="128" height="128" />
+
+
+                    </div>
+                </div>
+                <div class="w-[30%]  flex flex-row justify-between items-end pr-[4%] mt-[-5%]  ">
+
+                    <div class="animateLanguages bg-cardColor p-4 rounded-[16px] w-[25vw] md:w-[20vw] lg:w-[15vw] ">
+                        <div class="w-full flex flex-row justify-between items-center py-4 ">
+                            <div class="flex flex-row">
+                                <img src="./images/artwork.svg" />
+                                <p class="pl-2">العربية</p>
+                            </div>
+                            <input type="checkbox" id="checkArabic" class="toogle" />
+                            <label for="checkArabic" class="toogleButton"></label>
+                        </div>
+                        <hr class="w-[100%] m-auto text-fontColor-hrLanguageGrey " />
+                        <div class="w-full flex flex-row justify-between items-center py-4">
+                            <div class="flex flex-row">
+                                <img src="./images/artwork1.svg" />
+                                <p class="pl-2">English</p>
+                            </div> <input type="checkbox" id="checkEnglish" class="toogle" />
+                            <label for="checkEnglish" class="toogleButton"></label>
+                        </div>
+                        <hr class="w-[100%] m-auto text-fontColor-hrLanguageGrey " />
+
+                        <div class="w-full flex flex-row justify-between items-center py-4">
+                            <div class="flex flex-row">
+                                <img src="./images/artwork2.svg" />
+                                <p class="pl-2">Frensh</p>
+                            </div> <input type="checkbox" id="checkFrensh" class="toogle" />
+                            <label for="checkFrensh" class="toogleButton"></label>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- end of hero section -->
+    <!-- second section -->
+    <div class="w-full py-[5rem] bg-white px-[5%] grid grid-cols-1 lg:grid-cols-2 gap-10 place-items-center ">
+        <div>
+            <p class="text-fontColor-darkBlueBaseColor font-bold text-baseSmallHero leading-[3rem]">Magical circle can
+                Contain more than
+            <p class="text-fontColor-tooglePurple font-bold text-baseSmallHero leading-[3rem]">120 Types!</p>
+            </p>
+            <p class="text-fontColor-greySmallText py-5">Collects and analyzes responses from participants<br>
+                to gather valuable insights</p>
+            <div class="mt-[4%]">
+                <button
+                    class="btn text-buttonFontSize md:text-sm text-fontColor-whiteBaseColor bg-buttonColor-purbleBaseColor  px-buttonLargeX py-buttonLargeY rounded-medium font-bold">Try
+                    this out</button>
+
+            </div>
+        </div>
+        <div class="bg-grey relative rightDivSecondSection   ">
+            <img src="./images/vectorSecondSection.svg" class="z-1" />
+            <div id="rating"
+                class="absolute z-3 top-[6%] left-[-5%] p-[.8rem] shadow-sm	 rounded-[10%] bg-white flex justify-center  items-center flex-col cursor-pointer">
+                <img src="./images/star.svg" class="z-3" width="30px" height="30px" />
+                <p class="text-xs">Rating Scale</p>
+            </div>
+
+            <img src="./images/addQuestion.svg" id="circle"
+                class="absolute hidden left-[47%] h-[95%] w-[auto] top-[3%] z-2 cursor-pointer shadow-sm" />
+            <div id="score"
+                class="absolute hidden z-3 top-[35%] left-[20%] p-[.8rem] shadow-sm rounded-[10%] bg-white flex justify-center  items-center flex-col cursor-pointer">
+                <img src="./images/promoterScore.svg" class="z-3" width="30px" height="30px" />
+                <p class="text-xs">Net Promoter Score</p>
+            </div>
+            <div id="answer"
+                class="absolute hidden z-3 top-[70%] left-[10%] p-[.8rem] shadow-sm rounded-[10%] bg-white flex justify-center  items-center flex-col cursor-pointer">
+                <img src="./images/textAnswer.svg" class="z-3" width="30px" height="30px" />
+                <p class="text-xs">Text Answer</p>
+            </div>
+        </div>
+    </div>
+    <!-- end of second section -->
+    <!-- third section -->
+    <div class="w-full   bg-fontColor-darkBlueBaseColor	pt-[3rem]">
+        <div class="flex flex-row w-full justify-between items-center px-[5%] mb-[2%]">
+            <p class="text-fontColor-whiteBaseColor font-bold text-3xl">Key Features</p>
+            <p class="text-fontColor-whiteBaseColor ">Collect and analyzes responses from participants to gather
+                valuable insights</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-[2.5rem] gap-5 px-[5%] ">
+            <div class="w-full rounded-[5%] flex flex-col justify-between z-10"
+                style="background-color: rgba(145, 145, 145, .1);">
+                <img class="w-full  " src="./images/colour1.svg" />
+                <p class="text-xl font-bold px-[8%] pb-[3%] text-fontColor-whiteBaseColor">Customization
+                    <br>& Theming
+                </p>
+            </div>
+            <div class="w-full rounded-[5%] flex flex-col justify-between z-10"
+                style="background-color: rgba(145, 145, 145, .1);">
+
+                <img class="w-[90%] mx-auto h-[10rem] " src="./images/artificial-intelligence.svg" />
+                <p class="text-xl font-bold px-[8%] pb-[3%] text-fontColor-whiteBaseColor">AISurveys<br>Generating
+                </p>
+            </div>
+            <div class="w-full rounded-[5%] flex flex-col justify-between z-10"
+                style="background-color: rgba(145, 145, 145, .1);">
+                <img class="w-[90%] mx-auto h-[10rem] " src="./images/pie-chart.svg" />
+                <p class="text-xl font-bold px-[8%] pb-[3%] text-fontColor-whiteBaseColor">Responses<br>Analyzing
+                </p>
+            </div>
+            <div class="w-full rounded-[5%] flex flex-col justify-between z-10 	"
+                style="background-color: rgba(145, 145, 145, .1);">
+                <img class="w-[90%] mx-auto h-[10rem] 	 " src="./images/language.svg" />
+                <p class="text-xl font-bold px-[8%] pb-[3%] text-fontColor-whiteBaseColor">Supporting
+                    MultiLanguages
+                </p>
+            </div>
+        </div>
+        <div class="w-full flex flex-col items-end mt-[-15%] z-0">
+            <img src="./images/vectorThirdSection.svg" class="w-[45%] z-0" />
+        </div>
+
+    </div>
+    <!-- end of third section -->
+    <!-- 4th section -->
+    <div class="w-full py-[3rem] bg-white px-[5%]">
+        <div class="w-full flex flex-col justify-center items-center pb-[1.5rem]">
+            <p class="text-3xl font-bold text-fontColor-darkBlueBaseColor text-center">Questions That Make
+                Decisions<br>Driven by Data!</p>
+        </div>
+        <div class="  grid grid-cols-1 md:grid-cols-2 mb-10  ">
+            <div class=" w-full">
+                <div
+                    class=" w-[22%] p-[.8rem] shadow-md rounded-[10%] bg-white flex justify-center  items-center flex-col ">
+                    <img src="./images/promoterScore.svg" width="30px" height="30px" />
+                    <p class="text-xs">Net Promoter Score</p>
+                </div>
+                <p class="text-2xl font-bold my-5 pr-[15rem]">How likely is it that you would Recommend to a friend or
+                    colleague?
+                </p>
+            </div>
+            <div class="w-full flex flex-col justify-center ">
+                <div class="w-full bg-lightGray2 h-[7rem] rounded-[.8rem] flex flex-row justify-center items-center">
+                    <div id="promoterScoreSlider" class="w-[85%] h-[45%] bg-darkGray2 cursor-pointer ">
+                    </div>
+                    <div class="h-[45%] bg-red hidden relative" id="redPart">
+                        <div class="   w-[40%] grid justify-items-center opacity-0	text-4xl absolute right-[10%]"
+                            id="sad">
+                            😥
+
+                        </div>
+                    </div>
+                    <div class="h-[45%] bg-yellow  hidden relative" id="yellowPart">
+                        <div class="  w-[30%] grid justify-items-end opacity-0 text-4xl absolute right-[5%]"
+                            id="neutral">
+                            🙂
+                        </div>
+                    </div>
+                    <div class="w-[5%] h-[45%] bg-green relative" id="greenPart">
+                        <div class=" w-[40%] grid justify-items-center opacity-0 text-4xl absolute right-[20%]"
+                            id="love">
+                            🤩
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3  pl-[2%] gap-10 mb-10 ">
+
+            <div class="w-[90%] flex flex-col col-span-2  pl-[2%] ">
+                <div class="w-full bg-lightGray2  rounded-[.8rem] px-[5%] py-[2%] cursor-pointer " id="starsSlider">
+                    <div class="flex flex-row  justify-between items-center  my-2 ">
+                        <p class="w-[10%]">1 stars</p>
+                        <div class="flex flex-row w-[55%]">
+                            <div id="firstStarPurpleSlider" class="  h-[1rem] bg-buttonColor-purbleBaseColor  "></div>
+                            <div id="firstStarGraySlider" class="w-[100%] h-[1rem] bg-darkGray2">
+                            </div>
+                        </div>
+                        <p class="w-[30%]">30%-144 responses</p>
+                    </div>
+                    <div class="flex flex-row  justify-between items-center my-2">
+                        <p class="w-[10%]">2 stars</p>
+                        <div class="flex flex-row w-[55%]">
+                            <div id="secondStarPurpleSlider"
+                                class="  h-[1rem] bg-buttonColor-purbleBaseColor flex flex-row items-center justify-between 	 ">
+                                <div></div>
+                                <img class="hidden mr-[-20%] z-10" id="stars" src="./images/st.png" width="50px"
+                                    height="50px" />
+                            </div>
+                            <div id="secondStarGraySlider" class="w-[100%] h-[1rem] bg-darkGray2">
+                            </div>
+                        </div>
+                        <p class="w-[30%]">30%-144 responses</p>
+                    </div>
+                    <div class="flex flex-row  justify-between items-center my-2">
+                        <p class="w-[10%]">3 stars</p>
+                        <div class="flex flex-row w-[55%]">
+                            <div id="thirdStarPurpleSlider" class="  h-[1rem] bg-buttonColor-purbleBaseColor  "></div>
+                            <div id="thirdStarGraySlider" class="w-[100%] h-[1rem] bg-darkGray2">
+                            </div>
+                        </div>
+                        <p class="w-[30%]">30%-144 responses</p>
+                    </div>
+                    <div class="flex flex-row  justify-between items-center  my-2">
+                        <p class="w-[10%]">4 stars</p>
+                        <div class="flex flex-row w-[55%]">
+                            <div id="forthStarPurpleSlider" class="  h-[1rem] bg-buttonColor-purbleBaseColor  "></div>
+                            <div id="forthStarGraySlider" class="w-[100%] h-[1rem] bg-darkGray2">
+                            </div>
+                        </div>
+                        <p class="w-[30%]">30%-144 responses</p>
+                    </div>
+                    <div class="flex flex-row  justify-between items-center my-2">
+                        <p class="w-[10%]">5 stars</p>
+                        <div class="flex flex-row w-[55%]">
+                            <div id="fiveStarPurpleSlider" class="  h-[1rem] bg-buttonColor-purbleBaseColor  "></div>
+                            <div id="fiveStarGraySlider" class="w-[100%] h-[1rem] bg-darkGray2">
+                            </div>
+                        </div>
+                        <p class="w-[30%]">30%-144 responses</p>
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+            <div class=" w-full">
+                <div
+                    class=" w-[25%] p-[.8rem] shadow-md rounded-[10%] bg-white flex justify-center  items-center flex-col ">
+                    <img src="./images/starGreen.svg" class="z-3" width="30px" height="30px" />
+                    <p class="text-xs">Rating Scale</p>
+                </div>
+                <p class="text-2xl font-bold my-5 ">How likely is it that you would recommend to a friend or
+                    colleague?
+                </p>
+            </div>
+        </div>
+        <div class="  grid grid-cols-1 md:grid-cols-2 mb-10 pl-[5%] items-center ">
+            <div class=" w-full">
+                <div
+                    class=" w-[15%] p-[.5rem] shadow-md rounded-[10%] bg-white flex justify-center  items-center flex-col ">
+                    <img src="./images/forthsection.svg" width="30px" height="30px" />
+                    <p class="text-xs">Multi Select</p>
+                </div>
+                <p class="text-2xl font-bold my-5 pr-[15rem]">How likely is it that you would Recommend to a friend or
+                    colleague?
+                </p>
+            </div>
+            <div class="w-full flex flex-col justify-center ">
+                <div
+                    class="w-full bg-lightGray2 relative cursor-pointer  rounded-[.8rem] min-h-[20rem] flex flex-col justify-center items-center py-5">
+
+                    <img src="./images/Pie.svg" class=" opacity-[.4] w-[30%]" id="circleChart" />
+                    <div class="flex flex-row w-[50%] mx-auto justify-between items-center">
+                        <div class="flex flex-row items-center">
+                            <div class="w-[.8rem] h-[.8rem] rounded-[100%] bg-fontColor-purbleBaseColor mx-2"></div>
+                            <p class="text-darkGray2">Answer 1</p>
+                            <p class="mx-2 text-fontColor-darkBlueBaseColor">80</p>
+                        </div>
+                        <div class="flex flex-row items-center">
+                            <div class="w-[.8rem] h-[.8rem] rounded-[100%] bg-aquaColor mx-2"></div>
+                            <p class="text-darkGray2">Answer 1</p>
+                            <p class="mx-2 text-fontColor-darkBlueBaseColor">10</p>
+                        </div>
+
+                    </div>
+                    <div id="firstImg"
+                        class=" absolute top-[35%] opacity-0  rounded-[100%]  bg-purpleAvatar border-2	border-fontColor-whiteBaseColor	flex items-center justify-center overflow-hidden  ">
+
+                        <img src="./images/image88.svg" />
+                    </div>
+                    <div id="secondImg"
+                        class=" absolute top-[20%]  opacity-0 rounded-[100%]  bg-fontColor-purbleBaseColor border-2	border-fontColor-whiteBaseColor	flex items-center justify-center overflow-hidden ">
+
+                        <img src="./images/image97.svg" />
+
+
+                    </div>
+                    <div id="thirdImg"
+                        class=" absolute top-[18%]  opacity-0  rounded-[100%]  bg-aquaColor border-2	border-fontColor-whiteBaseColor	flex items-center justify-center overflow-hidden ">
+
+                        <img src="./images/image73.svg" />
+                    </div>
+                    <div id="forthImg"
+                        class=" absolute top-[30%]  opacity-0  rounded-[100%]  bg-fontColor-purbleBaseColor border-2	border-fontColor-whiteBaseColor	flex items-center justify-center overflow-hidden ">
+
+                        <img src="./images/image61.svg" />
+                    </div>
+                    <div id="lastImg"
+                        class=" absolute top-[50%]  opacity-0 rounded-[100%]  bg-green border-2	border-fontColor-whiteBaseColor	flex items-center justify-center overflow-hidden ">
+
+                        <img src="./images/image1.svg" />
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 pl-[2%] gap-10 mb-10 items-center ">
+
+            <div class="w-[90%] flex flex-col col-span-2  pl-[2%] ">
+                <div class="w-full bg-lightGray2  rounded-[.8rem] px-[5%] py-[2%] cursor-pointer relative "
+                    id="chartSlider">
+                    <img src="./images/Chart6.svg" width="100%" />
+                    <div id="answer1" class="absolute left-[14%] bottom-[16%] w-[3%]  bg-[#759BE4]">
+                        <img class="top-0 mt-[-100%] opacity-0 toggleClass" src="./images/animoji.svg" />
+                    </div>
+                    <div id="answer2" class="absolute left-[24%] bottom-[16%] w-[3%]  bg-fontColor-purbleBaseColor">
+                        <img class="top-0 mt-[-100%] opacity-0 toggleClass" src="./images/animoji(1).svg" />
+
+                    </div>
+                    <div id="answer3" class="absolute left-[34%] bottom-[16%] w-[3%]  bg-[#85CF88]">
+                        <img class="top-0 mt-[-100%] opacity-0 toggleClass" src="./images/animoji(2).svg" />
+
+                    </div>
+                    <div id="answer4" class="absolute left-[44%] bottom-[16%] w-[3%]  bg-[#F7A66B]">
+                        <img class="top-0 mt-[-100%] opacity-0 toggleClass" src="./images/animoji(3).svg" />
+
+                    </div>
+                    <div id="answer5" class="absolute left-[54%] bottom-[16%] w-[3%]  bg-[#CEB0FA]">
+                        <img class="top-0 mt-[-100%] opacity-0 toggleClass" src="./images/animoji(4).svg" />
+
+                    </div>
+                    <div id="answer6" class="absolute left-[64%] bottom-[16%] w-[3%]  bg-[#8133F1]">
+                        <img class="top-0 mt-[-100%] opacity-0 toggleClass" src="./images/animoji(5).svg" />
+
+                    </div>
+                    <div id="answer7" class="absolute left-[74%] bottom-[16%] w-[3%]  bg-[#CEB0FA]">
+                        <img class="top-0 mt-[-100%] opacity-0 toggleClass" src="./images/animoji(6).svg" />
+
+                    </div>
+                    <div id="answer8" class="absolute left-[84%] bottom-[16%] w-[3%]  bg-[#6CAEAE]">
+                        <img class="top-0 mt-[-100%] opacity-0 toggleClass" src="./images/animoji(8).svg" />
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class=" w-full">
+                <div
+                    class=" w-[28%] p-[.8rem] shadow-md rounded-[10%] bg-white flex justify-center  items-center flex-col ">
+                    <img src="./images/Frame1000005090.svg" class="z-3" width="30px" height="30px" />
+                    <p class="text-xs">Single Select</p>
+                </div>
+                <p class="text-2xl font-bold my-5 ">How likely is it that you would recommend to a friend or
+                    colleague?
+                </p>
+            </div>
+        </div>
+        <div class="w-full flex flex-col justify-center items-center ">
+            <p class="text-3xl font-bold text-fontColor-darkBlueBaseColor text-center">
+                And way much moooore..👀
+        </div>
+    </div>
+    <!--end of 4th section-->
+    <div
+        class="w-full bg-gradient-to-r from-leftGradiant to-rightGradiant py-[3rem] px-[5%] grid grid-cols-1 md:grid-cols-3 items-center ">
+
+        <div class="pr-[10%] col-span-1">
+            <p class="text-5xl font-bold text-fontColor-whiteBaseColor mb-[1.5rem]">Question Bank</p>
+            <p class="text-fontColor-whiteBaseColor">Collects and analyzes responses from participants
+                to gather valuable insights
+            </p>
+            <p class="text-fontColor-whiteBaseColor mb-[1.5rem]">Collects and analyzes responses from participants
+                to gather valuable insights</p>
+            <div class="flex flex-row w-full">
+                <button class="w-[3rem] h-[3rem] rounded-[1.5rem] bg-buttonColor-whiteBaseColor mr-2" >
+                    <img src="./images/arrow-left.svg" class="mx-auto w-[35%] h-[35%]" />
+                </button>
+                <button class="w-[3rem] h-[3rem] rounded-[1.5rem] bg-buttonColor-whiteBaseColor ">
+                    <img src="./images/arrow-right.svg" class="mx-auto w-[35%] h-[35%]"/>
+                </button>
+            </div>
+        </div>
+        <div class="col-span-2">ll</div>
+
+
+
+    </div>
+</body>
+
+</html>

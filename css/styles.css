@@ -1,0 +1,1061 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*nav bar dropdown styles*/
+.dropdown {
+    position: relative;
+}
+
+.show {
+    display: block !important;
+}
+
+/* Dropdown content (hidden by default) */
+.navBar .dropdown-content {
+    display: none;
+    position: absolute;
+    animation: slideUp .3s;
+    z-index: 3;
+}
+
+@keyframes slideUp {
+    from {
+        margin-top: 25px;
+    }
+
+    to {
+        margin-top: 0;
+    }
+}
+
+/* .dropdown-content li{
+color: red;
+  } */
+.toogleButton {
+    background-color: lightgray;
+    width: 50px;
+    height: 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+}
+
+.toogleButton::before {
+    position: absolute;
+    content: "";
+    /* to show the white ball in toogle*/
+    margin: 2px;
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: #fff;
+    transition: .3s;
+    /* time of the transform*/
+}
+
+input:checked+.toogleButton {
+    background-color: #6200EE;
+}
+
+input:checked+.toogleButton::before {
+    transform: translateX(22px);
+}
+
+.toogle {
+    display: none;
+    /* to hide toogle check box*/
+}
+
+/* first div animation */
+@keyframes moveUp {
+
+    0% {
+        transform: rotate(0deg);
+        top: 25%
+    }
+
+    20% {
+        transform: rotate(.5deg);
+        top: 24%
+    }
+
+    40% {
+        transform: rotate(1deg);
+        top: 23%
+    }
+
+    60% {
+        transform: rotate(1.5deg);
+        top: 22%
+    }
+
+    80% {
+        transform: rotate(2deg);
+        top: 21%
+    }
+
+    100% {
+        transform: rotate(2deg);
+        top: 20%
+    }
+
+}
+
+@keyframes moveDown {
+    0% {
+        transform: rotate(2deg);
+        top: 20%;
+    }
+
+    20% {
+        transform: rotate(1.5deg);
+        top: 21%;
+    }
+
+    40% {
+        transform: rotate(1deg);
+        top: 22%;
+    }
+
+    60% {
+        transform: rotate(0.5deg);
+        top: 23%;
+    }
+
+    80% {
+        transform: rotate(0deg);
+        top: 24%;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        top: 25%;
+    }
+}
+
+.animateFirstDiv {
+    animation: moveUp 3s linear 0s infinite normal, moveDown 3s linear 3s infinite normal;
+    ;
+}
+
+@keyframes moveDownForLanguages {
+    0% {
+        transform: rotate(0deg);
+        margin-top: 0px;
+    }
+
+    20% {
+        transform: rotate(1deg);
+        margin-top: 2px;
+    }
+
+    40% {
+        transform: rotate(2deg);
+        margin-top: 4px;
+    }
+
+    60% {
+        transform: rotate(3deg);
+        margin-top: 6px;
+    }
+
+    80% {
+        transform: rotate(4deg);
+        margin-top: 8px;
+
+    }
+
+    100% {
+        transform: rotate(5deg);
+        margin-top: 10px;
+
+    }
+}
+
+@keyframes moveUpForLanguages {
+    0% {
+        transform: rotate(5deg);
+        margin-top: 10px;
+    }
+
+    20% {
+        transform: rotate(4deg);
+        margin-top: 8px;
+    }
+
+    40% {
+        transform: rotate(3deg);
+        margin-top: 6px;
+    }
+
+    60% {
+        transform: rotate(2deg);
+        margin-top: 4px;
+    }
+
+    80% {
+        transform: rotate(1deg);
+        margin-top: 2px;
+
+    }
+
+    100% {
+        transform: rotate(0deg);
+        margin-top: 0px;
+
+    }
+}
+
+.animateLanguages {
+    animation: moveDownForLanguages 3s linear 0s infinite normal, moveUpForLanguages 3s linear 0s infinite normal;
+}
+
+.wordChange::before {
+    content: "People";
+    animation: wordsChange infinite 4s ease-in-out
+}
+
+@keyframes wordsChange {
+
+    0% {
+        content: "People";
+    }
+
+
+    50% {
+        content: "Business";
+    }
+
+    75% {
+        content: "Minds";
+    }
+}
+
+.circleRotate {
+    display: inline !important;
+    animation: rotateCircle linear .1s;
+}
+
+.scoreDiv {
+    display: flex !important;
+    animation: score linear .1s;
+}
+
+.answerDiv {
+    display: flex !important;
+    animation: answer linear .1s;
+}
+
+
+@keyframes rotateCircle {
+
+    0% {
+        transform: rotate(12deg);
+
+    }
+
+    20% {
+        transform: rotate(10deg);
+    }
+
+    40% {
+        transform: rotate(8deg);
+
+    }
+
+    60% {
+        transform: rotate(6deg);
+
+    }
+
+    80% {
+        transform: rotate(4deg);
+
+    }
+
+    100% {
+        transform: rotate(0deg);
+
+    }
+
+}
+
+@keyframes score {
+    from {
+        left: 0
+    }
+
+    to {
+        left: 20%
+    }
+}
+
+@keyframes answer {
+    from {
+        left: 0
+    }
+
+    to {
+        left: 10%
+    }
+}
+
+@keyframes greenIncrease {
+    0% {
+        width: 5%;
+    }
+
+    10% {
+        width: 10%;
+    }
+
+    20% {
+        width: 15%;
+    }
+
+    30% {
+        width: 20%;
+    }
+
+    40% {
+        width: 25%;
+    }
+
+    50% {
+        width: 30%;
+    }
+
+    60% {
+        width: 35%;
+    }
+
+    70% {
+        width: 40%;
+    }
+
+    80% {
+        width: 40%;
+    }
+
+    90% {
+        width: 40%;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes yellowIncrease {
+    0% {
+        width: 5%;
+    }
+
+    10% {
+        width: 10%;
+    }
+
+    20% {
+        width: 15%;
+    }
+
+    30% {
+        width: 20%;
+    }
+
+    40% {
+        width: 25%;
+    }
+
+    50% {
+        width: 30%;
+    }
+
+    60% {
+        width: 30%;
+    }
+
+    70% {
+        width: 30%;
+    }
+
+    80% {
+        width: 30%;
+    }
+
+    90% {
+        width: 30%;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes redIncrease {
+    0% {
+        width: 5%;
+    }
+
+    10% {
+        width: 10%;
+    }
+
+    20% {
+        width: 15%;
+    }
+
+    30% {
+        width: 20%;
+    }
+
+    40% {
+        width: 20%;
+    }
+
+    50% {
+        width: 20%;
+    }
+
+    60% {
+        width: 20%;
+    }
+
+    70% {
+        width: 20%;
+    }
+
+    80% {
+        width: 20%;
+    }
+
+    90% {
+        width: 20%;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+
+.red {
+    animation: redIncrease linear 1s forwards;
+    display: inline !important;
+}
+
+.green {
+    animation: greenIncrease linear 1s forwards;
+}
+
+.yellow {
+    animation: yellowIncrease linear 1s forwards;
+    display: inline !important;
+
+}
+
+.hide {
+    display: none !important;
+}
+
+@keyframes emojeShow {
+    0% {
+        opacity: 0;
+        /* margin-top: -1.5%; */
+        top: 30%;
+    }
+
+    20% {
+        opacity: .2;
+        /* margin-top: -2.5%; */
+        top: 29%;
+
+    }
+
+    40% {
+        opacity: .4;
+        /* margin-top: -3.5%; */
+        top: 28%;
+
+    }
+
+    60% {
+        opacity: .6;
+        /* margin-top: -4.5%; */
+        top: 27%;
+
+
+    }
+
+    80% {
+        opacity: .8;
+        /* margin-top: -5.5%; */
+        top: 26%;
+
+    }
+
+    100% {
+        opacity: 1;
+        /* margin-top: -6.5%; */
+        top: 25%;
+
+    }
+}
+
+.emoje {
+    animation: emojeShow linear 1s 2s forwards;
+}
+
+/* @keyframes darkGrayAnimationForGreen {
+    0% {
+        width: 85%;
+    }
+
+    10% {
+        width: 80%;
+    }
+
+    20% {
+        width: 75%;
+    }
+
+    30% {
+        width: 70%;
+    }
+
+    40% {
+        width: 65%;
+    }
+
+    50% {
+        width: 60%;
+    }
+
+    60% {
+        width: 55%;
+    }
+
+    70% {
+        width: 50%;
+    }
+
+    80% {
+        width: 45%;
+    }
+
+    90% {
+        width: 45%;
+    }
+
+    100% {
+        width: 45%;
+    }
+}
+
+.hideForGreen {
+    animation:darkGrayAnimationForGreen 1s linear forwards ;
+}
+@keyframes darkGrayAnimationForYellow {
+    0% {
+        width: 45%;
+    }
+
+    10% {
+        width: 40%;
+    }
+
+    20% {
+        width: 35%;
+    }
+
+    30% {
+        width: 30%;
+    }
+
+    40% {
+        width: 25%;
+    }
+
+    50% {
+        width: 20%;
+    }
+
+    60% {
+        width: 15%;
+    }
+
+    70% {
+        width: 15%;
+    }
+
+    80% {
+        width: 15%;
+    }
+
+    90% {
+        width: 15%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+.hideForYellow {
+    animation:darkGrayAnimationForYellow 1s 1s linear forwards ;
+} */
+@keyframes firstStarPurple {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 10%;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+
+@keyframes firstStarGrey {
+    0% {
+        width: 100%;
+    }
+
+    50% {
+        width: 90%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.firstStarPurple {
+    animation: firstStarPurple 1s linear forwards;
+}
+
+.firstStarGrey {
+    animation: firstStarGrey 1s linear forwards;
+
+}
+
+@keyframes secondStarPurple {
+    0% {
+        width: 0%;
+    }
+
+    40% {
+        width: 10%;
+    }
+
+    80% {
+        width: 30%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes secondStarGrey {
+    0% {
+        width: 100%;
+    }
+
+    40% {
+        width: 90%;
+    }
+
+    80% {
+        width: 70%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+.secondStarPurple {
+    animation: secondStarPurple 1s linear forwards;
+}
+
+.secondStarGrey {
+    animation: secondStarGrey 1s linear forwards;
+
+}
+
+@keyframes thirdStarPurple {
+    0% {
+        width: 0%;
+    }
+
+    40% {
+        width: 10%;
+    }
+
+    80% {
+        width: 30%;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes thirdStarGrey {
+    0% {
+        width: 100%;
+    }
+
+    40% {
+        width: 90%;
+    }
+
+    80% {
+        width: 70%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+.thirdStarPurple {
+    animation: thirdStarPurple 1s linear forwards;
+}
+
+.thirdStarGrey {
+    animation: thirdStarGrey 1s linear forwards;
+
+}
+
+@keyframes forthStarPurple {
+    0% {
+        width: 0%;
+    }
+
+    40% {
+        width: 10%;
+    }
+
+    80% {
+        width: 30%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes forthStarGrey {
+    0% {
+        width: 100%;
+    }
+
+    40% {
+        width: 90%;
+    }
+
+    80% {
+        width: 70%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+.forthStarPurple {
+    animation: forthStarPurple 1s linear forwards;
+}
+
+.forthStarGrey {
+    animation: forthStarGrey 1s linear forwards;
+
+}
+
+@keyframes fiveStarPurple {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 10%;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes fiveStarGrey {
+    0% {
+        width: 100%;
+    }
+
+    50% {
+        width: 90%;
+    }
+
+
+    100% {
+        width: 70%;
+    }
+}
+
+.fiveStarPurple {
+    animation: fiveStarPurple 1s linear forwards;
+}
+
+.fiveStarGrey {
+    animation: fiveStarGrey 1s linear forwards;
+
+}
+
+@keyframes circleChart {
+    0% {
+        width: 30%;
+        opacity: .5;
+
+    }
+
+    50% {
+        width: 35%;
+        opacity: .8;
+    }
+
+    100% {
+        width: 40%;
+        opacity: 1;
+    }
+}
+
+.circleChart {
+    animation: circleChart 1s linear forwards;
+}
+
+@keyframes firstImg {
+    0% {
+        left: 25%;
+        opacity: 1;
+    }
+
+    40% {
+        left: 28%;
+        opacity: 1;
+
+    }
+
+    100% {
+        left: 30%;
+        opacity: 1;
+
+    }
+}
+
+.firstImg {
+    animation: firstImg 1s 2s linear forwards;
+}
+
+@keyframes secondImg {
+    0% {
+        left: 35%;
+        opacity: 1;
+    }
+
+    40% {
+        left: 38%;
+        opacity: 1;
+
+    }
+
+    100% {
+        left: 40%;
+        opacity: 1;
+
+    }
+}
+
+.secondImg {
+    animation: secondImg 1s 2s linear forwards;
+}
+
+@keyframes thirdImg {
+    0% {
+        left: 55%;
+        opacity: 1;
+    }
+
+    40% {
+        left: 58%;
+        opacity: 1;
+
+    }
+
+    100% {
+        left: 60%;
+        opacity: 1;
+
+    }
+}
+
+.thirdImg {
+    animation: thirdImg 1s 2s linear forwards;
+}
+
+@keyframes forthImg {
+    0% {
+        left: 47%;
+        opacity: 1;
+    }
+
+    40% {
+        left: 50%;
+        opacity: 1;
+
+    }
+
+    100% {
+        left: 52%;
+        opacity: 1;
+
+    }
+}
+
+.forthImg {
+    animation: forthImg 1s 2s linear forwards;
+}
+
+@keyframes lastImg {
+    0% {
+        left: 40%;
+        opacity: 1;
+    }
+
+    40% {
+        left: 43%;
+        opacity: 1;
+
+    }
+
+    100% {
+        left: 45%;
+        opacity: 1;
+
+    }
+}
+
+.lastImg {
+    animation: lastImg 1s 2s linear forwards;
+}
+
+@keyframes answer1 {
+    0% {
+        height: 0%;
+
+    }
+
+    40% {
+        height: 15%;
+
+    }
+
+    100% {
+        height: 25%;
+    }
+
+}
+
+.answer1 {
+    animation: answer1 1s  linear forwards;
+
+}
+@keyframes answer2 {
+    0% {
+        height: 0%;
+
+    }
+
+    40% {
+        height: 30%;
+
+    }
+
+    100% {
+        height: 40%;
+    }
+
+}
+
+.answer2 {
+    animation: answer2 1s  linear forwards;
+
+}
+@keyframes answer3 {
+    0% {
+        height: 0%;
+
+    }
+
+    40% {
+        height: 10%;
+
+    }
+
+    100% {
+        height: 15%;
+    }
+
+}
+
+.answer3 {
+    animation: answer3 1s  linear forwards;
+
+}
+@keyframes answer4 {
+    0% {
+        height: 0%;
+
+    }
+
+    40% {
+        height: 5%;
+
+    }
+
+    100% {
+        height: 10%;
+    }
+
+}
+
+.answer4 {
+    animation: answer4 1s  linear forwards;
+
+}
+
+@keyframes answer8 {
+    0% {
+        height: 0%;
+
+    }
+
+    40% {
+        height: 35%;
+
+    }
+
+    100% {
+        height: 55%;
+    }
+
+}
+
+.answer8 {
+    animation: answer8 1s  linear forwards;
+
+}
