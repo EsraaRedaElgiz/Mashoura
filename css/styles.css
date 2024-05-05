@@ -960,3 +960,10 @@ input:checked+.toogleButton::before {
     animation: answer8 1s  linear forwards;
 
 }
+
+.slider{
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    overflow-x: scroll;
+}
