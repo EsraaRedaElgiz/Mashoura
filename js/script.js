@@ -12,9 +12,9 @@ window.addEventListener("load", () => {
     let rightButtonFifthSection = document.querySelector("#rightButton")
     let leftButtonFifthSection = document.querySelector("#leftButton")
     let sliderImgs = document.querySelectorAll('.imgsSlider img');
-    let firstText5thSection=document.querySelector("#firstText5thSection")
-    let secondText5thSection=document.querySelector("#secondText5thSection")
-
+    let firstText5thSection = document.querySelector("#firstText5thSection")
+    let secondText5thSection = document.querySelector("#secondText5thSection")
+    let lastSection = document.querySelector("#lastSectionContainer")
 
     dropDownButton.addEventListener("click", () => {
         document.querySelector(".dropdown-content").classList.toggle("show")
@@ -88,31 +88,44 @@ window.addEventListener("load", () => {
             }
         }
     })
-    const sliderFunction=()=>{
+    //slider in 7th section
+    const sliderFunction = () => {
         if (leftButtonFifthSection.disabled == false
         ) {
             sliderImgs[1].style.opacity = 1
             sliderImgs[2].style.opacity = 0;
             leftButtonFifthSection.style.backgroundColor = "#dddddd"
             leftButtonFifthSection.disabled = true
-            firstText5thSection.hidden=false
-            secondText5thSection.hidden=true
+            firstText5thSection.hidden = false
+            secondText5thSection.hidden = true
         } else {
             sliderImgs[1].style.opacity = 0
             sliderImgs[2].style.opacity = 1;
             leftButtonFifthSection.style.backgroundColor = "#fff"
             leftButtonFifthSection.disabled = false
-            firstText5thSection.hidden=true
-            secondText5thSection.hidden=false
+            firstText5thSection.hidden = true
+            secondText5thSection.hidden = false
 
 
         }
     }
     rightButtonFifthSection.addEventListener("click", () => {
-       sliderFunction()
+        sliderFunction()
     })
     leftButtonFifthSection.addEventListener("click", () => {
         sliderFunction()
+    })
+    lastSection.addEventListener("click",(event)=>{
+        if(event.target.type!="text" && event.target.type!="submit"){ //so if i press on the textinput or submit button it will not work
+            document.querySelectorAll("#lastSectionContainer>div>div")[0].classList.toggle("hideToLeft")
+            document.querySelectorAll("#lastSectionContainer>div>div")[1].classList.toggle("hideToRight")
+            let imgs=document.querySelectorAll("#lastSectionContainer img")
+            imgs[0].classList.toggle("hideWithOpacity")
+            imgs[1].classList.toggle("show")
+            // imgs[1].hidden=false
+        }
+        
+
     })
 
 })

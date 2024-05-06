@@ -960,7 +960,7 @@ input:checked+.toogleButton::before {
     animation: answer8 1s  linear forwards;
 
 }
-
+/* slider in 7th section */
 .slider{
     margin: auto;
     position: relative;
@@ -1010,4 +1010,40 @@ input:checked+.toogleButton::before {
     100%{
         transform: translateX(0);
     }
+}
+.slide>div>p{
+    font-weight: bold;
+    color: #11002A;
+}
+.slide>div{
+    width: 100%;
+    height: 100%;
+}
+@keyframes hideToLeft {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.hideToLeft{
+    animation: hideToLeft .5s linear forwards;
+}
+@keyframes hifeToRight {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+.hideToRight{
+    animation: hifeToRight .5s linear forwards;
+}
+.hideWithOpacity{
+    visibility: hidden 
+}
+.show{
+    visibility: visible;
 }
