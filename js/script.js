@@ -12,6 +12,9 @@ window.addEventListener("load", () => {
     let rightButtonFifthSection = document.querySelector("#rightButton")
     let leftButtonFifthSection = document.querySelector("#leftButton")
     let sliderImgs = document.querySelectorAll('.imgsSlider img');
+    let firstText5thSection=document.querySelector("#firstText5thSection")
+    let secondText5thSection=document.querySelector("#secondText5thSection")
+
 
     dropDownButton.addEventListener("click", () => {
         document.querySelector(".dropdown-content").classList.toggle("show")
@@ -92,11 +95,17 @@ window.addEventListener("load", () => {
             sliderImgs[2].style.opacity = 0;
             leftButtonFifthSection.style.backgroundColor = "#dddddd"
             leftButtonFifthSection.disabled = true
+            firstText5thSection.hidden=false
+            secondText5thSection.hidden=true
         } else {
             sliderImgs[1].style.opacity = 0
             sliderImgs[2].style.opacity = 1;
             leftButtonFifthSection.style.backgroundColor = "#fff"
             leftButtonFifthSection.disabled = false
+            firstText5thSection.hidden=true
+            secondText5thSection.hidden=false
+
+
         }
     }
     rightButtonFifthSection.addEventListener("click", () => {

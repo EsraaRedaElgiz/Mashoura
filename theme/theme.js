@@ -57,7 +57,9 @@ tailwind.config = {
                 buttonSmallX:"1.8rem", //28.8px
                 buttonSmallY:".8rem",//12.8px
                 buttonLargeX:"4.5rem", //72px
-                buttonLargeY:"1.2rem" //19.2px
+                buttonLargeY:"1.2rem", //19.2px
+                buttonMediumX:"4rem",//80px
+                buttonMediumY:"1rem"//24px
               },
               borderRadius:{
                 small:".5rem",//8px

@@ -961,4 +961,53 @@ input:checked+.toogleButton::before {
 
 }
 
+.slider{
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.slide-track{
+    display: flex;
+    width: calc(250px * 10);
+}
+.left{
+    animation: scrollLeft 10s linear infinite;
 
+}
+.right{
+    animation: scrollRight 10s linear infinite;
+
+}
+.slide{
+    width: 230px;
+    border: 1px solid #F3EBFE ;
+    border-radius: 5%;
+    margin-inline: 10px;
+}
+.slide>div>p{
+    font-weight: bold;
+    color: #11002A;
+}
+.slide>div{
+    width: 100%;
+    height: 100%;
+}
+@keyframes scrollLeft {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 4));
+    }
+}
+@keyframes scrollRight {
+    0%{
+        transform: translateX(calc(-250px * 4));
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
