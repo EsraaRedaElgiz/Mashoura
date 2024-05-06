@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./theme/theme.js"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Mashoura</title>
+
+</head>
+
+<body>
+    <!-- nav bar -->
+    <div class="w-full flex flex-row justify-between bg-fontColor-darkBlueBaseColor items-center sm:px-[5%] py-3">
+        <div class="flex flex-row items-center">
+            <img src="./images/Vector1.svg"
+                class="w-[1.8rem] h-[1.5rem] md:h-[2rem] md:w-[2.5rem] lg:h-[3.063rem] lg:w-[4.5rem] pr-1" />
+            <h1 class="text-xs md:text-sm  lg:text-logo font-bold  font-Yellix text-fontColor-whiteBaseColor ">Mashoura
+            </h1>
+
+        </div>
+        <div>
+            <ul class="flex flex-row navBar">
+                <li class="px-[.1rem] sm:px-2 md:px-3 text-xs md:text-sm cursor-pointer"><a
+                        class="text-fontColor-whiteBaseColor" href="./Home.html">Home</a></li>
+                <li
+                    class="dropdown px-[.1rem] sm:px-2 md:px-3 text-xs md:text-sm cursor-pointer  text-fontColor-whiteBaseColor">
+                    <a class="flex flex-row items-center text-fontColor-aquaBaseColor">Features
+                        <img src="./images/arrow-up-aqua.svg" width="17" height="16" />
+
+                    </a>
+
+
+                    <ul class="dropdown-content min-w-[200px] md:min-w-[300px] bg-menuGray pt-3 pl-2  ">
+                        <div class="flex flex-row w-full justify-between items-center">
+                            <div class=" w-[40%]">
+                                <li
+                                    class="text-fontColor-darkBlueBaseColor hover:text-fontColor-purbleBaseColor font-bold py-2">
+                                    <a href="#" id="link1">General</a>
+                                </li>
+                                <li
+                                    class="text-fontColor-darkBlueBaseColor hover:text-fontColor-purbleBaseColor font-bold py-2">
+                                    <a href="#" id="link2">Questions Types</a>
+                                </li>
+                                <li
+                                    class="text-fontColor-darkBlueBaseColor hover:text-fontColor-purbleBaseColor font-bold py-2">
+                                    <a href="#" id="link3">Surveys Responses</a>
+                                </li>
+                            </div>
+                            <div class="w-[60%]">
+                                <img src="./images/menuDefault.svg" width="100%" id="menuImage" />
+                            </div>
+                        </div>
+
+                    </ul>
+                </li>
+                <li class="px-[.1rem] sm:px-2 md:px-3 text-xs md:text-sm text-fontColor-whiteBaseColor cursor-pointer">
+                    <a>Pricing</a>
+                </li>
+                <li class="px-[.1rem] sm:px-2 md:px-3 text-xs md:text-sm text-fontColor-whiteBaseColor cursor-pointer">
+                    <a>About
+                        Us</a>
+                </li>
+                <li class="px-[.1rem] sm:px-2 md:px-3 text-xs md:text-sm text-fontColor-whiteBaseColor cursor-pointer">
+                    <a>Contact
+                        Us</a>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="flex flex-row items-center">
+            <div
+                class="flex flex-row items-center px-[.1rem] sm:px-2 md:px-3 text-xs md:text-sm text-fontColor-whiteBaseColor cursor-pointer">
+                <img src="./images/arrow-up.svg" width="17" height="16" />
+                <a>العربيه</a>
+            </div>
+            <button
+                class="btn text-buttonFontSize md:text-sm text-fontColor-darkBlueBaseColor bg-buttonColor-aquaBaseColor  px-buttonSmallX py-buttonSmallY rounded-small font-bold">Get
+                Started</button>
+        </div>
+
+    </div>
+    <!-- end of nav bar-->
+    <!--hero section-->
+    <div class="w-full bg-fontColor-darkBlueBaseColor pb-[20%] md:pb-[5%] " style="clip-path: polygon(0% 0%, 0 89%, 41% 92%, 73% 90%, 100% 86%, 100% 0%);
+    ">
+        <div class="grid grid-col-1 md:grid-cols-2 py-[5%] items-center">
+
+            <div>
+                <div class=" flex flex-row  ">
+
+                    <img src="./images/featuresVector1.svg" class="w-[75px] mr-[-7%]" />
+                    <img src="./images/featuresVector2.svg" class="w-[140px]" />
+                    <div class="ml-[-15%]">
+                        <p class="text-6xl font-bold text-fontColor-whiteBaseColor leading-[4.5rem] mb-5">Intelligent
+                            Surveys for Informed <span class="text-fontColor-aquaBaseColor">Decisions</span></p>
+                        <p class="text-fontColor-whiteBaseColor pr-[40%]">Collects and analyzes responses from
+                            participants
+                            to gather valuable insights</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="flex flex-row justify-end relative">
+                    <img src="./images/VectorFeaturesHero.svg" class="h-[25rem] z-0" />
+                    <img src="./images/Createsurvey.jpg"
+                        class="z-10 border-1 absolute w-[55%] right-[20%] top-[3%] rounded-[5%]" />
+                    <img src="./images/invitenewmember.svg" class="z-20 z-20 absolute left-[10%] w-[20%] top-[8%]" />
+                    <img src="./images/totalsurver.svg" class="z-20 z-20 absolute w-[25%] right-[10%] top-[23%]" />
+                    <img src="./images/Chart5feature.svg"
+                        class="z-20 z-20 absolute w-[50%]  left-0 md:left-[-5%] bottom-[0%]" />
+                    <img src="./images/Chart4feature.svg" class="z-20 z-20 absolute w-[40%]  right-[5%] bottom-[5%]" />
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end of hero section -->
+    <div class="bg-white py-[2%]">
+        <div class="px-[5%] flex flex-row justify-between items-end">
+            <p class="text-5xl text-fontColor-darkBlueBaseColor font-bold w-[55%]">Questions That Make Decisions Driven by Data!</p>
+            <div class="flex flex-row">
+                <button class="w-[3rem] h-[3rem] rounded-[1.5rem] bg-buttonColor-whiteBaseColor border-2 border-menuGray mr-2"
+                     disabled="true">
+                    <img src="./images/arrow-left.svg" class="mx-auto w-[35%] h-[35%]" />
+                </button>
+                <button class="w-[3rem] h-[3rem] rounded-[1.5rem] bg-buttonColor-whiteBaseColor border-2 border-fontColor-darkBlueBaseColor		 " >
+                    <img src="./images/arrow-right.svg" class="mx-auto w-[35%] h-[35%]" />
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <!--8th section-->
+    <div class=" bg-fontColor-darkBlueBaseColor min-h-[590px] overflow-hidden">
+        <div class="relative  cursor-pointer " id="lastSectionContainer">
+            <img src="./images/lastSection.svg" />
+            <div class="absolute flex flex-row   top-[30%] w-[100%]   ">
+                <div class="flex flex-col w-[50%] pl-[5%] pr-[15%] ">
+                    <p class="text-6xl font-bold text-fontColor-whiteBaseColor leading-[4rem] mb-[10%] "><span
+                            class="text-fontColor-aquaBaseColor">Free Trial</span>
+                        <br>For 15 Days!
+                    </p>
+                    <p class="text-fontColor-whiteBaseColor">Collects and analyzes responses from participants
+                        to gather valuable insights</p>
+                </div>
+                <div class="w-[50%]">
+                    <div class="w-[70%] p-[7%] bg-fontColor-darkBlueBaseColor rounded-medium">
+                        <p class="mb-[3%] text-fontColor-whiteBaseColor">Email Address</p>
+                        <input class="rounded-small w-full p-[3%] mb-[7%] " placeholder="Enter the email address..."
+                            style="background-color: rgba(255, 255, 255, 0.1);" />
+                        <button
+                            class="btn text-buttonFontSize md:text-sm text-fontColor-whiteBaseColor bg-buttonColor-purbleBaseColor  px-buttonMediumX py-buttonMediumY rounded-medium font-bold">Submit</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row w-full  justify-center absolute bottom-0">
+                <img src="./images/Vector8thsection.svg" hidden />
+            </div>
+        </div>
+
+
+    </div>
+    <!--9th section-->
+    <div class="flex flex-row bg-fontColor-whiteBaseColor px-[3%] py-[.5%]">
+        <div class="w-[20%] flex flex-row items-center flex-wrap	 ">
+            <img src="./images/fotterVector.svg" class=" pr-1" />
+            <h1 class="text-xs  font-bold  text-fontColor-darkBlueBaseColor ">Mashoura
+            </h1>
+
+        </div>
+        <div
+            class="w-[60%]  flex flex-row items-center justify-center text-xs text-fontColor-darkBlueBaseColor flex-wrap	">
+            Copyright © 2023. Mashoura. All rights reserved.
+        </div>
+        <div class="w-[20%] flex flex-row flex-wrap items-center 	">
+            <div class="flex flex-row w-[100%] justify-end flex-wrap">
+                <div class="px-[4%] py-[2%] bg-menuGray flex items-center justify-center mx-[1%] rounded-small">
+                    <img src="./images/facebook.svg" />
+                </div>
+                <div class="px-[4%] py-[2%]  bg-menuGray flex items-center justify-center mx-[1%] rounded-small">
+                    <img src="./images/x.svg" />
+                </div>
+                <div class="px-[4%] py-[2%] bg-menuGray flex items-center justify-center mx-[1%] rounded-small">
+                    <img src="./images/linkedin.svg" />
+                </div>
+                <div class="px-[4%] py-[2%] bg-menuGray flex items-center justify-center mx-[1%] rounded-small">
+                    <img src="./images/youtube.svg" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--end of 9th section-->
+</body>
+
+</html>

@@ -15,7 +15,6 @@ window.addEventListener("load", () => {
     let firstText5thSection = document.querySelector("#firstText5thSection")
     let secondText5thSection = document.querySelector("#secondText5thSection")
     let lastSection = document.querySelector("#lastSectionContainer")
-
     dropDownButton.addEventListener("click", () => {
         document.querySelector(".dropdown-content").classList.toggle("show")
     });
@@ -37,13 +36,13 @@ window.addEventListener("load", () => {
     }
 
     // to toogle classes when press in any place in right div 
-    rightDivInSecondSection.addEventListener("click", (event) => {
+    rightDivInSecondSection?.addEventListener("click", (event) => {
         document.querySelector("#circle").classList.toggle("circleRotate")
         document.querySelector("#score").classList.toggle("scoreDiv")
         document.querySelector("#answer").classList.toggle("answerDiv")
     })
 
-    promoterScoreSlider.addEventListener("click", () => {
+    promoterScoreSlider?.addEventListener("click", () => {
         promoterScoreSlider.classList.add("hide")
         let parts = ["green", "yellow", "red"]
         let emojes = ["sad", "neutral", "love"]
@@ -57,7 +56,7 @@ window.addEventListener("load", () => {
         }
 
     })
-    starsSlider.addEventListener("click", () => {
+    starsSlider?.addEventListener("click", () => {
         let arrayOfElementes = ["first", "second", "third", "forth", "five"]
         for (let i = 0; i < arrayOfElementes.length; i++) {
             document.querySelector(`#${arrayOfElementes[i]}StarPurpleSlider`).classList.add(`${arrayOfElementes[i]}StarPurple`)
@@ -65,7 +64,7 @@ window.addEventListener("load", () => {
         }
         document.querySelector("#stars").classList.add("show")
     })
-    circleChart.addEventListener("click", () => {
+    circleChart?.addEventListener("click", () => {
         circleChart.classList.add("circleChart")
         let arrayOfImgAndClassNumber = ["first", "second", "third", "forth", "last"]
         for (let i = 0; i < arrayOfImgAndClassNumber.length; i++) {
@@ -73,7 +72,7 @@ window.addEventListener("load", () => {
         }
 
     })
-    chartSlider.addEventListener("click", () => {
+    chartSlider?.addEventListener("click", () => {
         let allEmojes = document.querySelectorAll("img.toggleClass")
         for (let i = 0; i < allEmojes.length; i++) {
             allEmojes[i].setAttribute("style", "opacity:1")
@@ -115,23 +114,23 @@ window.addEventListener("load", () => {
 
         }
     }
-    rightButtonFifthSection.addEventListener("click", () => {
+    rightButtonFifthSection?.addEventListener("click", () => {
         sliderFunction()
     })
-    leftButtonFifthSection.addEventListener("click", () => {
+    leftButtonFifthSection?.addEventListener("click", () => {
         sliderFunction()
     })
-    lastSection.addEventListener("click",(event)=>{
-        if(event.target.type!="text" && event.target.type!="submit"){ //so if i press on the textinput or submit button it will not work
+    lastSection?.addEventListener("click", (event) => {
+        if (event.target.type != "text" && event.target.type != "submit") { //so if i press on the textinput or submit button it will not work
             document.querySelectorAll("#lastSectionContainer>div>div")[0].classList.toggle("hideToLeft")
             document.querySelectorAll("#lastSectionContainer>div>div")[1].classList.toggle("hideToRight")
-            let imgs=document.querySelectorAll("#lastSectionContainer img")
+            let imgs = document.querySelectorAll("#lastSectionContainer img")
             imgs[0].classList.toggle("hideWithOpacity")
             imgs[1].classList.toggle("show")
-            // imgs[1].hidden=false
         }
-        
+
 
     })
+   
 
 })
