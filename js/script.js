@@ -88,12 +88,14 @@ window.addEventListener("load", () => {
             }
         }
     })
-    //slider in 7th section
+    //slider in 5th section
     const sliderFunction = () => {
         if (leftButtonFifthSection.disabled == false
         ) {
             sliderImgs[1].style.opacity = 1
             sliderImgs[2].style.opacity = 0;
+            sliderImgs[1].classList.add("scrollToLeft") //come from right in the screen to its place
+            sliderImgs[2].classList.add("scrollToRight")
             leftButtonFifthSection.style.backgroundColor = "#dddddd"
             leftButtonFifthSection.disabled = true
             firstText5thSection.hidden = false
@@ -101,6 +103,10 @@ window.addEventListener("load", () => {
         } else {
             sliderImgs[1].style.opacity = 0
             sliderImgs[2].style.opacity = 1;
+            sliderImgs[2].classList.remove("scrollToRight")
+            sliderImgs[2].classList.add("scrollToLeft") //come from right in the screen to its place
+            sliderImgs[1].classList.remove("scrollToLeft")
+            sliderImgs[1].classList.add("scrollToRight") //hide from its place to right in the screen
             leftButtonFifthSection.style.backgroundColor = "#fff"
             leftButtonFifthSection.disabled = false
             firstText5thSection.hidden = true

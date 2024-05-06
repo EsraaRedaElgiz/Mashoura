@@ -960,6 +960,29 @@ input:checked+.toogleButton::before {
     animation: answer8 1s  linear forwards;
 
 }
+/* slider in 5th section */
+@keyframes scrollToRight {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(150%);
+    }
+}
+.scrollToRight{
+    animation: scrollToRight .5s linear forwards;
+}
+ @keyframes scrollToLeft {
+    0%{
+        transform: translateX(150%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.scrollToLeft{
+    animation: scrollToLeft .5s linear forwards;
+} 
 /* slider in 7th section */
 .slider{
     margin: auto;
@@ -1030,7 +1053,7 @@ input:checked+.toogleButton::before {
 .hideToLeft{
     animation: hideToLeft .5s linear forwards;
 }
-@keyframes hifeToRight {
+@keyframes hideToRight {
     0%{
         transform: translateX(0);
     }
@@ -1039,7 +1062,7 @@ input:checked+.toogleButton::before {
     }
 }
 .hideToRight{
-    animation: hifeToRight .5s linear forwards;
+    animation: hideToRight .5s linear forwards;
 }
 .hideWithOpacity{
     visibility: hidden 
