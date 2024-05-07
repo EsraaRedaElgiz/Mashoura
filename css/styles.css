@@ -872,9 +872,10 @@ input:checked+.toogleButton::before {
 }
 
 .answer1 {
-    animation: answer1 1s  linear forwards;
+    animation: answer1 1s linear forwards;
 
 }
+
 @keyframes answer2 {
     0% {
         height: 0%;
@@ -893,9 +894,10 @@ input:checked+.toogleButton::before {
 }
 
 .answer2 {
-    animation: answer2 1s  linear forwards;
+    animation: answer2 1s linear forwards;
 
 }
+
 @keyframes answer3 {
     0% {
         height: 0%;
@@ -914,9 +916,10 @@ input:checked+.toogleButton::before {
 }
 
 .answer3 {
-    animation: answer3 1s  linear forwards;
+    animation: answer3 1s linear forwards;
 
 }
+
 @keyframes answer4 {
     0% {
         height: 0%;
@@ -935,7 +938,7 @@ input:checked+.toogleButton::before {
 }
 
 .answer4 {
-    animation: answer4 1s  linear forwards;
+    animation: answer4 1s linear forwards;
 
 }
 
@@ -957,34 +960,41 @@ input:checked+.toogleButton::before {
 }
 
 .answer8 {
-    animation: answer8 1s  linear forwards;
+    animation: answer8 1s linear forwards;
 
 }
+
 /* slider in 5th section */
 @keyframes scrollToRight {
-    0%{
+    0% {
         transform: translateX(0);
     }
-    100%{
+
+    100% {
         transform: translateX(150%);
     }
 }
-.scrollToRight{
+
+.scrollToRight {
     animation: scrollToRight .5s linear forwards;
 }
- @keyframes scrollToLeft {
-    0%{
+
+@keyframes scrollToLeft {
+    0% {
         transform: translateX(150%);
     }
-    100%{
+
+    100% {
         transform: translateX(0);
     }
 }
-.scrollToLeft{
+
+.scrollToLeft {
     animation: scrollToLeft .5s linear forwards;
-} 
+}
+
 /* slider in 7th section */
-.slider{
+.slider {
     margin: auto;
     position: relative;
     width: 100%;
@@ -992,83 +1002,125 @@ input:checked+.toogleButton::before {
     place-items: center;
     overflow: hidden;
 }
-.slide-track{
+
+.slide-track {
     display: flex;
     width: calc(250px * 10);
 }
-.left{
+
+.left {
     animation: scrollLeft 10s linear infinite;
 
 }
-.right{
+
+.right {
     animation: scrollRight 10s linear infinite;
 
 }
-.slide{
+
+.slide {
     width: 230px;
-    border: 1px solid #F3EBFE ;
+    border: 1px solid #F3EBFE;
     border-radius: 5%;
     margin-inline: 10px;
 }
-.slide>div>p{
+
+.slide>div>p {
     font-weight: bold;
     color: #11002A;
 }
-.slide>div{
+
+.slide>div {
     width: 100%;
     height: 100%;
 }
+
 @keyframes scrollLeft {
-    0%{
+    0% {
         transform: translateX(0);
     }
-    100%{
+
+    100% {
         transform: translateX(calc(-250px * 4));
     }
 }
+
 @keyframes scrollRight {
-    0%{
+    0% {
         transform: translateX(calc(-250px * 4));
     }
-    100%{
+
+    100% {
         transform: translateX(0);
     }
 }
-.slide>div>p{
+
+.slide>div>p {
     font-weight: bold;
     color: #11002A;
 }
-.slide>div{
+
+.slide>div {
     width: 100%;
     height: 100%;
 }
+
 @keyframes hideToLeft {
-    0%{
+    0% {
         transform: translateX(0);
     }
-    100%{
+
+    100% {
         transform: translateX(-100%);
     }
 }
-.hideToLeft{
+
+.hideToLeft {
     animation: hideToLeft .5s linear forwards;
 }
+
 @keyframes hideToRight {
-    0%{
+    0% {
         transform: translateX(0);
     }
-    100%{
+
+    100% {
         transform: translateX(100%);
     }
 }
-.hideToRight{
+
+.hideToRight {
     animation: hideToRight .5s linear forwards;
 }
-.hideWithOpacity{
-    visibility: hidden 
+
+.hideImg {
+    visibility: hidden
 }
-.show{
+
+.show {
     visibility: visible;
 }
 
+/*slider in features*/
+.gallary {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
 
+}
+
+.gallary div {
+    width: 80%;
+    flex: none; /*to make images bigger (take its size) */
+}
+
+.gallary div img {
+    width: 90%;
+    margin-inline: auto;
+}
+
+.gallary::-webkit-scrollbar {
+    display: none;
+}

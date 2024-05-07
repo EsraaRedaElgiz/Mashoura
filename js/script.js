@@ -15,6 +15,9 @@ window.addEventListener("load", () => {
     let firstText5thSection = document.querySelector("#firstText5thSection")
     let secondText5thSection = document.querySelector("#secondText5thSection")
     let lastSection = document.querySelector("#lastSectionContainer")
+    let prev = document.querySelector("#previos")
+    let next = document.querySelector("#next")
+    let scrollContainer = document.querySelector(".gallary")
     dropDownButton.addEventListener("click", () => {
         document.querySelector(".dropdown-content").classList.toggle("show")
     });
@@ -125,12 +128,28 @@ window.addEventListener("load", () => {
             document.querySelectorAll("#lastSectionContainer>div>div")[0].classList.toggle("hideToLeft")
             document.querySelectorAll("#lastSectionContainer>div>div")[1].classList.toggle("hideToRight")
             let imgs = document.querySelectorAll("#lastSectionContainer img")
-            imgs[0].classList.toggle("hideWithOpacity")
+            imgs[0].classList.toggle("hideImg")
             imgs[1].classList.toggle("show")
         }
 
 
     })
-   
+    next?.addEventListener("click", (event) => {
+        scrollContainer.scrollLeft += (event.view.innerWidth*(70/100))
+        prev.disabled = false
+        prev.style.borderColor = "#11002A"
+    })
+
+    prev?.addEventListener("click", (event) => {
+        if (scrollContainer.scrollLeft - (event.view.innerWidth*(70/100)) > 0) {
+            scrollContainer.scrollLeft -= (event.view.innerWidth*(70/100))
+
+        } else {
+            scrollContainer.scrollLeft=0
+            prev.disabled = true
+            prev.style.borderColor = "#F3EBFE"
+        }
+    })
 
 })
+
